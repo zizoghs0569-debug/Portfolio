@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Drawings</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #07d800;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<h1>My Drawings</h1>
+
+<div class="gallery">
+    <img src="5.jpg" alt="Drawing 1">
+    <img src="15.jpg" alt="Drawing 2">
+    <img src="224.jpg" alt="Drawing 3">
+    <img src="eminem.jpg" alt="Drawing 4">
+    <img src="pablo.jpg" alt="Drawing 5">
+    <img src="pacino.jpg" alt="Drawing 6">
+    <img src="horse.jpg" alt="Drawing 7">
+    <img src="lmomatila.JPG" alt="Drawing 8">
+    <img src="zizo draw.jpg" alt="Drawing 9">
+    <img src="19.jpg" alt="Drawing 10">
+    <img src="17.jpg" alt="Drawing 11">
+    <img src="ayay.jpg" alt="Drawing 12">
+    <!-- ajoute toutes tes images ici -->
+</div>
+
+</body>
+</html>

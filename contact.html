@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website Using HTML & CSS | ZIZOS</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* background section after navbar */
+    .contact-section {
+      min-height: 100vh;
+      background: url('90595.jpg') no-repeat center center/cover; /* ton image */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .contact-form {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-form label {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      margin-top: 5px;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      min-height: 100px;
+    }
+
+    .contact-form button {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #07d800;
+      color: #1f242d;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: transparent;
+      color: #07d800;
+      border: 2px solid #07d800;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <a href="#" class="logo">Portfolio.</a>
+    <ul>
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>    
+
+  <!-- animation bars -->
+  <div class="bars-animation">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+  </div>
+
+  <!-- contact section with background -->
+  <section class="contact-section">
+    <form class="contact-form" action="https://formspree.io/f/mnnbqojn" method="POST">
+      <label>
+        Your email:
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Your message:
+        <textarea name="message" required></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+</body>
+</html>
