@@ -16,15 +16,30 @@
 
     <nav class="navbar">
         <a href="#" class="logo">Portfolio.</a>
-        <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li ><a href="about.html">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-
+      
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+          <i class='bx bx-menu'></i>
+        </div>
+      
+        <ul id="nav-links">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>    
+      </nav>
+
+      <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+        </script>
+        
     
     
     <div class="bars-animation">

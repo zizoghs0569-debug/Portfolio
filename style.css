@@ -311,3 +311,238 @@ body {
     text-align: center;
     padding: 60px 20px; /* pour pas que le texte colle au bord */
 }
+
+
+
+
+/* For tablets and smaller */
+@media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column; /* stack links vertically */
+      text-align: center;
+    }
+  
+    .btn-art a {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  }
+  
+  /* For phones */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    form {
+      width: 90%; /* make form fit screen */
+    }
+  }
+  
+
+  /* ✅ General fixes for smaller screens */
+@media (max-width: 1024px) {
+    .home {
+      flex-direction: column; /* stack text + image */
+      text-align: center;
+      gap: 30px;
+      padding: 80px 5% 20px;
+    }
+  
+    .home-info h1 {
+      font-size: 40px;
+    }
+  
+    .home-info h2 {
+      font-size: 24px;
+    }
+  
+    .home-img .img-box {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  /* ✅ Tablets */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 15px 5%;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .home-info h1 {
+      font-size: 32px;
+    }
+  
+    .home-info h2 {
+      font-size: 20px;
+    }
+  
+    .btn-art a {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  }
+  
+  /* ✅ Phones */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    .home-info h2 {
+      font-size: 18px;
+    }
+  
+    .home-info p {
+      font-size: 14px;
+    }
+  
+    .navbar ul {
+      gap: 10px;
+    }
+  
+    .home-img .img-box {
+      width: 200px;
+      height: 200px;
+    }
+  
+    form {
+      width: 95%;
+    }
+  }
+  .home {
+    padding: 120px 9% 0; /* add top padding so content doesn’t hide under navbar */
+  }
+
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: row;  /* keep horizontal */
+      flex-wrap: wrap;      /* if screen is too small, they wrap to next line */
+      justify-content: center;
+    }
+
+    .navbar ul li {
+      margin: 5px 10px; /* smaller spacing for phones */
+    }
+}
+
+@media (max-width: 764px) {
+    .navbar {
+      padding: 15px 5%; /* smaller padding but more flexible */
+      width: 100%;      /* ensure it spans full screen */
+      box-sizing: border-box; /* include padding in width */
+    }
+  
+    .navbar ul {
+      justify-content: center; /* center the links */
+      flex-wrap: wrap;         /* wrap links to next line if needed */
+    }
+  
+    .navbar ul li {
+      margin: 5px 10px; /* smaller spacing between links */
+    }
+  }
+  @media (max-width: 764px) {
+    .navbar {
+      flex-direction: column;   /* stack logo above links */
+      align-items: center;
+      padding: 15px 5%;
+    }
+  
+    .navbar .logo {
+      margin-bottom: 10px;     /* space between logo and links */
+    }
+  
+    .navbar ul {
+      flex-direction: row;      /* keep links horizontal */
+      flex-wrap: wrap;          /* allow wrapping if too wide */
+      justify-content: center;
+      gap: 10px;                /* space between links */
+    }
+  
+    .navbar ul li {
+      margin: 0;                /* reset margins, gap handles spacing */
+    }
+  }
+/* Small screens */
+@media (max-width: 764px) {
+    .navbar {
+      flex-direction: column;   /* logo above links */
+      align-items: center;
+      padding: 15px 5%;
+    }
+  
+    .navbar .logo {
+      margin-bottom: 10px;      /* space between logo and links */
+      text-align: center;        /* logo centered */
+    }
+  
+    .navbar ul {
+      flex-direction: row;       /* keep links horizontal */
+      flex-wrap: wrap;           /* allow links to wrap to next line */
+      justify-content: center;   /* center links under logo */
+      gap: 10px;                 /* space between links */
+      width: 100%;               /* make them stay inside navbar */
+    }
+  
+    .navbar ul li {
+      margin: 0;                 /* spacing handled by gap */
+    }
+  }
+/* Hamburger icon */
+.hamburger {
+    display: none;          /* hidden on desktop */
+    cursor: pointer;
+    font-size: 28px;
+    color: #fff;            /* adjust to your navbar color */
+  }
+  
+  /* Mobile menu: hide by default */
+  #nav-links {
+    display: flex;           /* desktop default */
+    list-style: none;
+    gap: 35px;
+  }
+  
+  /* Mobile only */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;        /* show hamburger on mobile */
+    }
+  
+    #nav-links {
+      display: none;         /* hide links initially */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;             /* below navbar */
+      right: 5%;
+      background: rgba(0,0,0,0.8);
+      padding: 15px;
+      border-radius: 8px;
+    }
+  
+    #nav-links.show {
+      display: flex;         /* show when toggled */
+    }
+  }
+        
+      
